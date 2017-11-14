@@ -1,9 +1,325 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8" />
 		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<style>
+			*{
+			   padding: 0;
+			   margin: 0;
+			}
+			body{
+			font-family: "微软雅黑";
+			}
+			ul,ol li{
+			list-style:none ;
+			}
+			a{
+			text-decoration: none;
+			}
+			img{
+			vertical-align: top;
+			}
+			.cf:after{
+			content: '';
+			display: table;
+			clear: both;
+			}
+			.header{
+			    height: 45px;
+			    line-height: 45px;
+			    background-color: #00B38A;
+			    color: #fff;
+			    font-size: 20px;
+			    text-align: center;
+			    position: relative;
+			}
+			.frist_box{
+				border-bottom: 1px solid #F3F3F3;
+			    height: 43px;
+			    line-height: 43px;
+			    padding: 0 15px;
+			    color: #555555;
+			    font-size: 14px;
+			    position: relative;
+			}
+			.dl{
+				display: inline-block;
+			    background: #F5F5F5;
+			    border: 1px solid transparent;
+			    border-radius: 10px;
+			    width: 84px;
+			    height: 30px;
+			    text-align: center;
+			    line-height: 30px;
+			    position: absolute;
+			    top: 16%;
+   				right: 25px;
+			    color: #00B38A;
+			}
+			.list1{
+				padding: 15px;
+				height: 90px;
+				border-bottom: 1px solid #F3F3F3;
+				position: relative;
+			}
+			.list_logo {
+			    display: inline-block;
+			    float: left;
+			    width: 60px;
+			    height: 60px;
+			}
+			.website{
+				font-size: 17px;
+				margin-left: 70px;
+			}
+			.teacher{
+				display: inline-block;
+				font-size: 13px;
+				margin-left: 11px;
+			}
+			.money{
+				display: inline-block;
+			    font-size: 16px;
+			    color: #00B38A;
+			    position: absolute;
+			   	top: 50%;
+    			right: 40px;
+			}
+			.time{
+				display: inline-block;
+			    font-size: 12px;
+			    color: #555555;
+			    margin-left: 11px;
+			    margin-top: 3px;
+			}
+			.content{
+				position: relative;
+			}
+			.bottom{
+				position: fixed;
+				width: 100%;
+			    height: 45px;
+			    line-height: 45px;
+			    border-top: 1px solid #E8E8E8;
+			    background-color: #F6F6F6;
+			    color: #00B38A;
+			    bottom: 0;
+			    left: 0;
+			    z-index: 11;
+			    font-size: 16px;
+			}
+			.bottom a{
+				display: inline-block;
+				float: left;
+				width: 33.33%;
+				height: 45px;
+				color: #00b38a;
+    			text-align: center;
+			}
+			.load{
+			    height: 50px;
+			    line-height: 50px;
+			    text-align: center;
+			    font-size: 15px;
+			    background-color: #FAFAFA;
+			    margin-top: -8px;
+			}
+			.footer {
+			    text-align: center;
+			    font-size: 12px;
+			    margin-top: 30px;
+			    padding-bottom: 85px;
+			    color: #333;
+			}
+			
+		</style>
 	</head>
 	<body>
+		<div class="header">拉勾网</div>
+		<div class="content">
+			<div class="frist_box">
+				<span>10秒钟定制职位</span>
+				<a href="#" class="dl">去登录</a>
+			</div>
+			<ul class="all_list">
+				<li class="list1">
+					<img src="img/Cgp3O1ZqZFeAL2xeAAAtSuTFcUw887.jpg" class="list_logo" />
+					<div>
+						<div class="website">嗨学网</div>
+						<div class="job">
+							<span class="teacher">理论法学讲师[北京]</span>
+							<span class="money">6K-12K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1ZqZFeAL2xeAAAtSuTFcUw887.jpg" class="list_logo" />
+					<div>
+						<div class="website">嗨学网</div>
+						<div class="job">
+							<span class="teacher">刑事诉讼法讲师[北京]</span>
+							<span class="money">6K-12K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/CgpFT1ket1-AeL5OAAJrxlB8qM4562.png" class="list_logo" />
+					<div>
+						<div class="website">众银网</div>
+						<div class="job">
+							<span class="teacher">客服[南京]</span>
+							<span class="money">3K-4K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/CgpFT1ket1-AeL5OAAJrxlB8qM4562.png" class="list_logo" />
+					<div>
+						<div class="website">众银网</div>
+						<div class="job">
+							<span class="teacher">渠道专员[南京]</span>
+							<span class="money">3K-5K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/CgpFT1j1cemAADiSAAH5CLVoJxE469.jpg" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">10K-11K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1h3K6OAKU4FAACWYn0eTvU471.jpg" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">8K-9K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/CgoB5ln5lUuAM8oSAADO2Rz54hQ336.png" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">6K-8K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1dNU7WABAbAAAASF6ITtIQ191.png" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">3K-5K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1jAvq2Af3iqAAATFnrPj0U613.png" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">3K-5K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1dNU7WABAbAAAASF6ITtIQ191.png" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">3K-5K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/CgoB5ln5lUuAM8oSAADO2Rz54hQ336.png" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">3K-5K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1h3K6OAKU4FAACWYn0eTvU471.jpg" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">13K-20K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1YtmkSAZjX1AAA78knErXc273.jpg" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">13K-15K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/Cgp3O1YtmkSAZjX1AAA78knErXc273.jpg" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">13K-15K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+				<li class="list1">
+					<img src="img/CgpFT1j1cemAADiSAAH5CLVoJxE469.jpg" class="list_logo" />
+					<div>
+						<div class="website">洋钱罐</div>
+						<div class="job">
+							<span class="teacher">战略研究员[北京]</span>
+							<span class="money">13K-15K</span>
+						</div>
+						<div class="time">今天13:50</div>
+					</div>
+				</li>
+			</ul>
+			<div class="load">加载更多</div>
+			<div class="footer">
+				<p>?2015 lagou.com, all right reserved</p>
+				<p>移动版 · 电脑版 · 回顶部</p>
+			</div>
+			<div class="bottom">
+					<a href="#">职位</a>
+					<a href="#">搜索</a>
+					<a href="#">我的</a>
+			</div>
+		</div>
 	</body>
 </html>
