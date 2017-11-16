@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
 		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<!--<link rel="stylesheet" href="practice2.css"/>-->
+		<style>
+			html { width: 100%; height: 100%; }
+			html body { margin: 0; width: 100%; height: 300px; position: relative; overflow: hidden; }
+			html body .box { width: 400%; height: 300px; position: absolute; }
+			html body .box div { width: 25%; height: 300px; float: left; }
+			html body .box div:nth-child(1) { background: blue; }
+			html body .box div:nth-child(2) { background: red; }
+			html body .box div:nth-child(3) { background: gold; }
+			html body .box div:nth-child(4) { background: green; }
+		</style>
 	</head>
 	<body>
-		
+		<div class="box" id="box">
+			<div>11</div>
+			<div>22</div>
+			<div>33</div>
+			<div>44</div>
+		</div>
+		<script>
+			var oDiv = document.getElementById("box");
+			var divs=oDiv.getElementsByTagName("div");
+			var w=innerWidth;
+			oDiv.addEventListener("touchstart",function(ev){
+				ev.preventDefault();
+				var posLeft=this.offsetLeft;
+				var ex=ev.changedTouches[0].pageX;
+//				console.log(ex);
+				oDiv.addEventListener('touchmove',function(ev){
+					var dis=ev.changedTouches[0].pageX-ex;
+					oDiv.style.left=(posLeft+dis)+"px";
+				})
+				oDiv.addEventListener("touchend",function(ev){
+					var n=Math.round(oDiv.offsetLeft/w);
+					if(n<=-(divs.length-1)){
+						n=-(divs.length-1)
+					}
+					if(n>0){
+						n=0;
+					}
+					oDiv.style.left=n*w+"px";
+				})
+			})
+		</script>
 	</body>
 </html>
